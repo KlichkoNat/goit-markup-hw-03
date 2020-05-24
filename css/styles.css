@@ -11,8 +11,11 @@ html {
 body {
   font-family: Roboto;
   color: #212121;
+  width: 1600px;
 }
 .header {
+  display: flex;
+  align-items: center;
   background: #ffffff;
   color: #212121;
   font-family: Roboto;
@@ -23,17 +26,30 @@ body {
   letter-spacing: 0.02em;
 }
 .container {
-  width: 1200px;
+  display: flex;
+  align-items: center;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid turquoise;
 }
-. .logo {
+.container-box {
+  align-items: center;
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid turquoise;
+}
+.logo {
   color: #2196f3;
 }
 .logos {
+  justify-content: start;
+  margin-right: 85px;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -60,19 +76,40 @@ a:hover {
   color: #2196f3;
 }
 ul {
+  margin-top: 0;
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
 }
 .link {
   color: #2196f3;
-}
-.social-links .link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+.social-links {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.link-title {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.link-title:last-child {
+  margin-right: 0;
 }
 .adress {
   font-style: normal;
@@ -91,6 +128,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 .phone {
+  margin-right: 30px;
   color: #757575;
   font-style: normal;
   font-weight: 500;
@@ -102,8 +140,10 @@ ul {
   color: #2196f3;
 }
 .contacts {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 305px;
 }
 .preview {
   margin-top: 0;
@@ -118,18 +158,12 @@ ul {
   text-transform: uppercase;
   text-align: center;
   width: 646px;
-  margin-left: 477px;
-  margin-right: 477px;
-}
-.conateiner-one {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  outline: 2px solid turquoise;
 }
 .button {
   display: inline-block;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -138,7 +172,6 @@ ul {
   color: #ffffff;
   min-width: 200px;
   padding: 10px 32px;
-  text-align: center;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -147,49 +180,17 @@ p {
   color: #757575;
 }
 .text {
+  width: 270px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
-.conateiner-two {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid turquoise;
-}
-.conateiner-three {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid turquoise;
-}
-.conateiner-four {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline: 2px solid turquoise;
-}
-.conateiner-five {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid turquoise;
-}
+
 .desc {
   margin-top: 0;
   margin-bottom: 0;
@@ -207,6 +208,10 @@ h2 {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+.none {
+  display: none;
 }
 h3 {
   margin-top: 0;
@@ -222,14 +227,20 @@ h3 {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  padding-right: 30px;
   background: #f5f4fa;
   border-radius: 4px;
+  text-align: center;
 }
-
+.box {
+  display: flex;
+  padding-top: 94px;
+}
 .item {
+  width: 270px;
   margin-top: 0;
   margin-bottom: 10px;
-
+  padding-right: 30px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -241,6 +252,7 @@ h3 {
 .items {
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 30px;
   padding: 27px 82px;
   font-style: normal;
   font-weight: bold;
@@ -251,6 +263,13 @@ h3 {
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+}
+.items-title {
+  display: flex;
+}
+.items-title > a {
+  margin-right: 30px;
 }
 .title {
   font-style: normal;
@@ -273,6 +292,14 @@ h3 {
   line-height: 30px;
   letter-spacing: 0.03em;
 }
+.socials {
+  display: flex;
+  width: 270 px;
+}
+.socials-title {
+  margin-right: 40px;
+}
+
 .popup {
   font-style: normal;
   font-weight: normal;
@@ -289,4 +316,7 @@ h3 {
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+}
+.footer {
+  background: #2f303a;
 }
