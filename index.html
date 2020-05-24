@@ -7,21 +7,27 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Web Studio</title>
   </head>
   <body>
     <header>
-      <nav class="header">
-        <a class="logos" href="/"> <span class="logo">Web</span> Studio</a>
-        <ul class="social-links">
-          <li><a href="" class="link">Студия</a></li>
-          <li>
-            <a href="./portfolio.html">Портфолио</a>
-          </li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <ul>
+      <div class="container">
+        <nav class="header">
+          <a class="logos" href="/"> <span class="logo">Web</span> Studio</a>
+          <ul class="social-links">
+            <li><a href="" class="link">Студия</a></li>
+            <li>
+              <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
           <li>
             <img src="./images/envelope.svg" alt="Конверт" />
             <a class="phone" href="maito:info@defstudio.com"
@@ -33,18 +39,20 @@
             <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="conateiner-one">
         <h1 class="preview">эффективные решения для вашего бизнеса</h1>
         <a class="button" href="">Заказать услугу</a>
       </section>
-      <section>
+      <section class="conateiner-two">
         <h2>Преимущества нашей студии</h2>
         <ul>
           <li>
-            <img src="./images/antenna.svg" alt="Антена" />
+            <div class="picture">
+              <img src="./images/antenna.svg" alt="Антена" />
+            </div>
             <p class="item">Внимание к деталям</p>
             <p class="text">
               Идейные соображения, а также начало повседневной работы по
@@ -52,7 +60,9 @@
             </p>
           </li>
           <li>
-            <img src="./images/clock.svg" alt="Часы" />
+            <div class="picture">
+              <img src="./images/clock.svg" alt="Часы" />
+            </div>
             <p class="item">Пунктуальность</p>
             <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -60,7 +70,9 @@
             </p>
           </li>
           <li>
-            <img src="./images/computer.svg" alt="Компьютер" />
+            <div class="picture">
+              <img src="./images/computer.svg" alt="Компьютер" />
+            </div>
             <p class="item">Планирование</p>
             <p class="text">
               Равным образом консультация с широким активом в значительной
@@ -69,7 +81,9 @@
           </li>
 
           <li>
-            <img src="./images/cosmonaut.svg" alt="Космнавт" />
+            <div class="picture">
+              <img src="./images/cosmonaut.svg" alt="Космнавт" />
+            </div>
             <p class="item">Современные технологии</p>
             <p class="text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -78,7 +92,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="conateiner-three">
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li>
@@ -101,7 +115,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="conateiner-four">
         <h2>Наша команда</h2>
         <ul>
           <li>
@@ -210,7 +224,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="conateiner-five">
         <h2>Постоянные клиенты</h2>
         <ul>
           <li>
