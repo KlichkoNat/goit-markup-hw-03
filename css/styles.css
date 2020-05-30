@@ -11,7 +11,6 @@ html {
 body {
   font-family: Roboto;
   color: #212121;
-  width: 1600px;
 }
 .header {
   display: flex;
@@ -25,10 +24,12 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.container {
+.header-title {
   display: flex;
   align-items: center;
-  width: 1230px;
+}
+.container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -36,26 +37,28 @@ body {
 }
 .container-box {
   align-items: center;
-  width: 1230px;
+  text-align: center;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .flex-element {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  padding-bottom: 20px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -81,6 +84,7 @@ body {
   font-family: Raleway;
 }
 .logos-footer {
+  margin-bottom: 10px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -90,6 +94,10 @@ body {
   color: #ffffff;
 }
 a {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   text-decoration: none;
   font-size: 14px;
   line-height: 16px;
@@ -101,8 +109,12 @@ a:hover {
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   list-style: none;
   padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
 }
 .link {
   color: #2196f3;
@@ -135,6 +147,7 @@ ul {
   margin-right: 0;
 }
 .adress {
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -150,8 +163,13 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.mobile-title {
+  margin-bottom: 9px;
+}
+.mobile-title:last-child {
+  margin-bottom: 0px;
+}
 .phone {
-  margin-right: 30px;
   color: #757575;
   font-style: normal;
   font-weight: 500;
@@ -167,6 +185,9 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 305px;
+}
+.contacts-item {
+  margin-right: 30px;
 }
 .preview {
   margin-top: 0;
@@ -195,8 +216,6 @@ ul {
   color: #ffffff;
   min-width: 200px;
   padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -207,20 +226,19 @@ p {
 .text {
   width: 270px;
   margin-top: 0;
-  margin-bottom: 94px;
-  padding-right: 30px;
+  margin-right: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
-
+.name {
+  margin-top: 30px;
+}
 .desc {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 28px;
+  margin-top: 10px;
+  margin-bottom: 28px;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -241,7 +259,6 @@ h2 {
 .heading {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 .none {
   display: none;
@@ -249,7 +266,6 @@ h2 {
 h3 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 30px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -262,21 +278,20 @@ h3 {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding-right: 30px;
+  margin-right: 30px;
   background: #f5f4fa;
   border-radius: 4px;
   text-align: center;
 }
 .box {
   display: flex;
-  padding-top: 94px;
   justify-content: center;
 }
 .item {
   width: 270px;
   margin-top: 0;
   margin-bottom: 10px;
-  padding-right: 30px;
+  margin-right: 30px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -287,8 +302,8 @@ h3 {
 }
 .items {
   margin-top: 0;
-  margin-bottom: 94px;
-  margin-right: 30px;
+  margin-bottom: 0;
+  width: 370px;
   padding: 27px 82px;
   font-style: normal;
   font-weight: bold;
@@ -302,6 +317,7 @@ h3 {
   border-radius: 0px 0px 4px 4px;
 }
 .list-items {
+  margin-bottom: 34px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -314,13 +330,20 @@ h3 {
 .items-title {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
-.items-title > a {
+.heading-title {
   margin-right: 30px;
+}
+.header-title :last-child {
+  margin-right: 0;
 }
 .meta {
   display: flex;
   justify-content: center;
+}
+.meta :last-child {
+  margin-right: 0;
 }
 .title {
   color: #ffffff;
@@ -333,7 +356,6 @@ h3 {
 .subject {
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 20px;
   margin-bottom: 4px;
   text-align: left;
   font-style: normal;
@@ -342,12 +364,14 @@ h3 {
   line-height: 36px;
   letter-spacing: 0.06em;
 }
+.subject-title {
+  margin-bottom: 20px;
+}
 .subtitle {
   width: 322px;
   margin-left: 24px;
   padding-right: 24px;
   margin-top: 0;
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -356,23 +380,26 @@ h3 {
 }
 .socials {
   display: flex;
-  padding-bottom: 36px;
   justify-content: center;
 }
 .socials-title {
-  margin-right: 10px;
+  margin-right: 34px;
   text-align: center;
 }
 .socials-title:last-child {
   margin-right: 0;
 }
 .holder {
+  height: 422px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   margin-right: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 36px;
+}
+.holder :last-child {
+  margin-right: 0;
 }
 
 .popup {
@@ -384,8 +411,11 @@ h3 {
   color: #ffffff;
 }
 .aside {
+  width: 1600px;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: normal;
   background: #2f303a;
@@ -400,15 +430,17 @@ h3 {
 }
 .list-title {
   margin-right: 30px;
-  margin-bottom: 94px;
 }
 .list-title:last-child {
   margin-right: 0;
 }
 .footer {
   display: flex;
-  justify-content: space-around;
   width: 1600px;
+  padding-left: 214px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   background: #2f303a;
 }
 .content-title {
@@ -421,11 +453,14 @@ h3 {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .flex {
-  width: 1230px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -438,4 +473,10 @@ h3 {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+.avatar {
+  margin-right: 69px;
+}
+.content {
+  margin-right: 94px;
 }
