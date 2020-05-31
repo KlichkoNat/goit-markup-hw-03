@@ -37,7 +37,6 @@ body {
 }
 .container-box {
   align-items: center;
-  text-align: center;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -220,6 +219,9 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.button-items {
+  text-align: center;
+}
 p {
   color: #757575;
 }
@@ -227,6 +229,7 @@ p {
   width: 270px;
   margin-top: 0;
   margin-right: 30px;
+  text-align: left;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -285,13 +288,14 @@ h3 {
 }
 .box {
   display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .item {
   width: 270px;
   margin-top: 0;
   margin-bottom: 10px;
   margin-right: 30px;
+  text-align: left;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -329,14 +333,18 @@ h3 {
 }
 .items-title {
   display: flex;
-  justify-content: center;
   margin-top: 50px;
+  text-align: center;
 }
 .heading-title {
   margin-right: 30px;
 }
-.header-title :last-child {
+.heading-title :last-child {
   margin-right: 0;
+}
+.heading-title a {
+  display: block;
+  line-height: 0;
 }
 .meta {
   display: flex;
@@ -411,11 +419,8 @@ h3 {
   color: #ffffff;
 }
 .aside {
-  width: 1600px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
   font-style: normal;
   font-weight: normal;
   background: #2f303a;
@@ -436,11 +441,6 @@ h3 {
 }
 .footer {
   display: flex;
-  width: 1600px;
-  padding-left: 214px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   background: #2f303a;
 }
 .content-title {
@@ -475,6 +475,7 @@ h3 {
   border-radius: 4px;
 }
 .avatar {
+  margin-left: 215px;
   margin-right: 69px;
 }
 .content {
